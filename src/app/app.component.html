@@ -1,20 +1,12 @@
-<main class="main">
-  <div class="content">
-    <h1>Hello, Please Log In With Your Account Information</h1>
-    <form id="loginForm">
-      <div class="form-group">
-        <label for="username">Username:    </label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:    </label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="but_cont">
-        <button type="submit">Login</button>
-      </div>
-    </form>
-  </div>
-</main>
-
-<router-outlet />
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularLoginProject</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <router-outlet></router-outlet> <!-- Apparently, in app.component.ts there is only supposed to be the router-outlet tag -->
+</body>
