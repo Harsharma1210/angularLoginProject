@@ -1,6 +1,8 @@
 <p>
     Here is the data recieved from the API:
 </p>
-<p>
-    {{data}}
-</p>
+
+<!-- You CANNOT use a <pre> tag inside of a <p> tag -->
+<pre>
+    {{data | json}}
+</pre>
