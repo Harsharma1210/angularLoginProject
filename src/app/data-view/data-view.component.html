@@ -3,6 +3,12 @@
 </p>
 
 <!-- You CANNOT use a <pre> tag inside of a <p> tag -->
-<pre>
-    {{data | json}}
-</pre>
+<h1>Welcome, {{ APIResponse.login_response.firstName }}!</h1>
+<br>
+<p>
+    Date of Birth: {{APIResponse.login_response.dateOfBirth.month}}/{{APIResponse.login_response.dateOfBirth.dayOfMonth}}/{{APIResponse.login_response.dateOfBirth.year}}
+</p>
+<br>
+<p>
+    Your E-mail: {{APIResponse.login_response.email}}
+</p>
